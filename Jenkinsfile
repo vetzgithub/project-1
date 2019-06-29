@@ -6,7 +6,7 @@ node {
 	}
 
 	stage('Build image') {
-		app = docker.build("vetzdocker/project1:devops")
+		app = docker.build("vetzdocker/project1:1")
 	}
 	stage('Test Image') {
 		app.inside {
